@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         addE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, activity_add_employee.class);
+                Intent intent = new Intent(MainActivity.this,
+                        activity_add_employee.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         updateE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, activity_update_employee.class);
+                Intent intent = new Intent(MainActivity.this,
+                        activity_update_employee.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         deleteE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, activity_delete_employee.class);
+                Intent intent = new Intent(MainActivity.this,
+                        activity_delete_employee.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         getE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, activity_get_employee.class);
+                Intent intent = new Intent(MainActivity.this,
+                        activity_get_employee.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
         getAllE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, activity_get_all_employees.class);
+                Intent intent = new Intent(MainActivity.this,
+                        activity_get_all_employees.class);
                 startActivity(intent);
             }
         });

@@ -32,8 +32,13 @@ public class activity_add_employee extends AppCompatActivity {
                     name = empname.getText().toString();
                     sal = (Integer.parseInt(empsal.getText().toString()));
                     empdbhelper.insertEmployee(name, sal);
-                    Toast.makeText(getBaseContext(), "Your record has been saved successfully", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),
+                            "Your Record Has Been Saved Successfully !!",
+                            Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
+                    Toast.makeText(getBaseContext(),
+                            "Insert All Data, Please !",
+                            Toast.LENGTH_LONG).show();
                     e.printStackTrace();
                 }
             }

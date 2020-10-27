@@ -34,10 +34,20 @@ public class activity_update_employee extends AppCompatActivity {
                 int emp_id = Integer.parseInt(empid.getText().toString());
                 String empstr = empname.getText().toString();
                 int intsal = Integer.parseInt(empsal.getText().toString());
-                if (empdb.updateEmployee(emp_id, empstr, intsal)) {
-                    Toast.makeText(getBaseContext(), "Record has been updated", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getBaseContext(), "Record has not been updated", Toast.LENGTH_LONG).show();
+
+                try {
+                    if (empdb.updateEmployee(emp_id, empstr, intsal)) {
+                        Toast.makeText(getBaseContext(),
+                                "Record Has Been Updated", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(getBaseContext(),
+                                "Record Has Not Been Updated", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (Exception e) {
+                    Toast.makeText(getBaseContext(),
+                            "Insert All Data, Please !",
+                            Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
                 }
             }
         });
@@ -56,11 +66,19 @@ public class activity_update_employee extends AppCompatActivity {
                 empid.setEnabled(false);
                 int emp_id = Integer.parseInt(empid.getText().toString());
                 Cursor c = empdb.retrieveEmployee(emp_id);
-                if (c.moveToFirst()) {
-                    empname.setText(c.getString(1));
-                    empsal.setText(c.getString(2));
-                } else {
-                    Toast.makeText(getBaseContext(), "No Employee Record Found", Toast.LENGTH_LONG).show();
+                try {
+                    if (c.moveToFirst()) {
+                        empname.setText(c.getString(1));
+                        empsal.setText(c.getString(2));
+                    } else {
+                        Toast.makeText(getBaseContext(),
+                                "No Employee Record Found", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (Exception e) {
+                    Toast.makeText(getBaseContext(),
+                            "Insert All Data, Please !",
+                            Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
                 }
             }
         });

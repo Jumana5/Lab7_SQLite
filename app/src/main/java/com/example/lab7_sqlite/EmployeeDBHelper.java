@@ -65,7 +65,9 @@ public class EmployeeDBHelper {
 
     //Declaring the insertEmployee() method to add the employee details into the database
     public long insertEmployee(String empname, int empsal) {
-        ContentValues cv = new ContentValues(); cv.put(EmpName, empname); cv.put(EmpSal, empsal);
+        ContentValues cv = new ContentValues();
+        cv.put(EmpName, empname);
+        cv.put(EmpSal, empsal);
         this.connect();
         return database.insert(tablename, null, cv);
     }

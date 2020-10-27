@@ -27,10 +27,10 @@ public class activity_delete_employee extends AppCompatActivity {
             public void onClick(View v) {
                 int emp_id = Integer.parseInt(empid.getText().toString());
                 if (empdbhelper.deleteEmployee(emp_id))
-                    Toast.makeText(getBaseContext(), "Your record has been deleted",
+                    Toast.makeText(getBaseContext(), "Your Record Has Been Deleted",
                             Toast.LENGTH_LONG).show();
                 else
-                    Toast.makeText(getBaseContext(), "Record does not exist",
+                    Toast.makeText(getBaseContext(), "Record Does Not Exist",
                             Toast.LENGTH_LONG).show();
             }
         });

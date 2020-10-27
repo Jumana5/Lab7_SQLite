@@ -12,26 +12,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
         tools:context=".GetEmployee">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee ID:" />
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee ID:" />
 
         <EditText
             android:id="@+id/empid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginBottom="50dp"
             android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btn_find"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="get employee" />
+            android:textSize="15sp"
+            android:text="Get Employee" />
 
     </LinearLayout>
 

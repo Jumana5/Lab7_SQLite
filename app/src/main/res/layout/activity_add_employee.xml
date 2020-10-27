@@ -12,38 +12,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
         tools:context=".AddEmployee" >
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee name:" />
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee Name:" />
 
         <EditText
             android:id="@+id/empname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginBottom="50dp"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee salary:" />
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee Salary:" />
 
         <EditText
             android:id="@+id/empsal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginBottom="50dp"
             android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btn_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
             android:text="Add Employee" />
     </LinearLayout>
 

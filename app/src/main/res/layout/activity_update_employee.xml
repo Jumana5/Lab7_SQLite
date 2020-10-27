@@ -12,18 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
         tools:context=".UpdateEmployee">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee ID:" />
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee ID:" />
 
         <EditText
             android:id="@+id/empidd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -31,12 +38,17 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee name:" />
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee Name:" />
 
         <EditText
             android:id="@+id/empname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -44,12 +56,17 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter employee salary:" />
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Enter Employee Salary:" />
 
         <EditText
             android:id="@+id/empsal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -57,7 +74,9 @@
             android:id="@+id/btn_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="update Employee" />
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Update Employee" />
 
     </LinearLayout>
 

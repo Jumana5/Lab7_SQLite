@@ -9,6 +9,7 @@ public class activity_get_all_employees extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_all_employees);
 
@@ -18,10 +19,15 @@ public class activity_get_all_employees extends AppCompatActivity {
         if(c.moveToFirst())
         {
             do{
-                Toast.makeText(this, "Employee Id:" + c.getString(0) + "\n" + "Employee Name:" + c.getString(1) + "\n" + "Employee Salary:" + c.getString(2), Toast.LENGTH_LONG).show();
+                Toast.makeText(this,
+                        "Employee Id:" + c.getString(0) + "\n"
+                                + "Employee Name:" + c.getString(1) + "\n"
+                                + "Employee Salary:" + c.getString(2),
+                        Toast.LENGTH_LONG).show();
             } while(c.moveToNext());
         } else {
-            Toast.makeText(this, "No Records in the database",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,
+                    "No Records In The Database",Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -12,38 +12,55 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
         tools:context=".MainActivity">
 
 
         <Button
             android:id="@+id/addE"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
             android:text="Add an Employee" />
 
         <Button
             android:id="@+id/updateE"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update an emplotee" />
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Update an Emplotee" />
 
         <Button
             android:id="@+id/deleteE"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="delete an employee" />
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Delete an Employee" />
 
         <Button
             android:id="@+id/getE"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="get an employee" />
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Get an Employee" />
 
         <Button
             android:id="@+id/getAllE"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="get all employee" />
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Get All Employee" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

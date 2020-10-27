@@ -29,10 +29,14 @@ public class activity_get_employee extends AppCompatActivity {
                 int emp_id = Integer.parseInt(empid.getText().toString());
                 Cursor c = empdb.retrieveEmployee(emp_id);
                 if (c.moveToFirst()) {
-                    Toast.makeText(getBaseContext(), "Employee Id: " + c.getString(0) + "\n Employee Name: " + c.getString(1) + " \n Employee Salary: " +
-                            c.getString(2), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),
+                            "Employee Id: " + c.getString(0)
+                                    + "\n Employee Name: " + c.getString(1)
+                                    + " \n Employee Salary: " + c.getString(2)
+                            , Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(getBaseContext(), "No Employee Record Found", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "No Employee Record Found",
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });
